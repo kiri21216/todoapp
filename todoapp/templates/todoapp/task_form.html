@@ -1,0 +1,56 @@
+{% extends 'todoapp/base.html' %}
+{% block content %}
+
+<div class="header">
+    <a href="{% url 'tasks' %}">戻る</a>
+</div>
+
+<form action="" method="post" style="padding: 20px;">
+    {% csrf_token %}
+    <p>
+    <label for="id_title">タイトル:</label>
+    <input type="text" name="title" maxlength="50" required id="id_title">
+    </p>
+    <p>
+    <label for="id_description">内容:</label>
+    <input type="text" name="description" maxlength="200" required id="id_description">
+    </p>
+    <p>
+    <label for="id_timeField">所要時間:</label>
+    <select name = "timeField" required id="id_timeField">
+    <option value selected>--------</option>
+    <option value="0">0</option>
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+    <option value="6">6</option>
+    <option value="7">7</option>
+    <option value="8">8</option>
+    <option value="9">9</option>
+    <option value="10">10</option>
+    <option value="11">11</option>
+    <option value="12">12</option>
+    <option value="12">13</option>
+    <option value="14">14</option>
+    <option value="15">15</option>
+    <option value="16">16</option>
+    <option value="17">17</option>
+    <option value="18">18</option>
+    <option value="19">19</option>
+    <option value="20">20</option>
+    <option value="21">21</option>
+    <option value="22">22</option>
+    <option value="23">23</option>
+    <option value="24">24</option>
+    </select>
+    時間</p>
+    <p>
+    <label for="id_minutes"></label>
+    <input type="number" name="minutes" min="0" max="59" class="minutes" required id="id_minutes">
+    分</p>
+    <input type="submit" value="追加" class="searchButton" type="TimeField" maxlength="24" />
+</form>
+
+{% endblock content %}
