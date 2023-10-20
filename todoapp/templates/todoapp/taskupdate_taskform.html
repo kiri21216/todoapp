@@ -52,7 +52,7 @@
     分</p>
     <p>
     <label for="id_completed">
-    <input type="checkbox" class="completed"id="id_completed" value={{task.completed}}/>完了
+    <input type="checkbox" name="completed" class="completed" id="id_completed" value="true" {% if task.completed %}checked{% endif %} />完了
     </label>
     </p>
     <input type="submit" value="追加" class="searchButton" type="TimeField" maxlength="24" />
