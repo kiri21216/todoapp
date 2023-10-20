@@ -1,0 +1,99 @@
+
+body {
+    background-image: url( 'static/images/CorkBoard.jpg');
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    padding-top: 55px;
+}
+.todoAppWrapper {
+    max-width: 530px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0px 0px 15px -5px #777777;
+    border-radius: 10px;
+}
+a {
+    color: #595959;
+    text-decoration: none;
+}
+h1{
+    margin: 0;
+}
+.header{
+    text-align: center;
+    padding: 10px 0;
+    background: white;
+    border-radius: 10px 10px 0 0;
+    color: #595959;
+}
+.taskWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border-top: 1px solid rgb(238,174,202);
+}
+.taskTitle{
+    display: flex;
+    align-items: center;
+}
+.taskCompletedIcon{
+    height: 20px;
+    width: 20px;
+    background-color:#ff9e9e;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.taskInCompletedIcon{
+    height: 20px;
+    width: 20px;
+    background-color:#9e9eff;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.loginAndLogout{
+    padding: 20px;
+
+}
+.loginAndLogout a{
+    color: lightcoral;
+}
+.editButton{
+    color: aquamarine;
+}
+.deleteButton{
+    color: red;
+}
+.searchWrapper{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+}
+.searchInput{
+    height: 24px;
+    outline: none;
+    border: 1px solid rgb(238,174,202);
+    border-radius: 5px;
+    padding: 2px 4px;
+    width: 160px !important;
+}
+.searchButton{
+    border: 1px solid rgb(238,174,202);
+    padding: 4px 10px;
+    background-color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.addButton{
+    font-size: 32px;
+    color: aqua;
+}
+label {
+    display: block;
+}
+input[type="text"], textarea {
+    width: 100%;
+}
+.accountWrapper{
+    padding: 20px;
+}
